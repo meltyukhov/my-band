@@ -1,6 +1,6 @@
-const HOSTNAME = "o9z4gi5rh7.execute-api.eu-central-1.amazonaws.com"
-// const STAGE = "Development"
-const STAGE = "Production"
+const HOSTNAME = process.env.REACT_APP_HOSTNAME
+const STAGE = process.env.REACT_APP_STAGE
+
 const INSTRUMENTS_URL = `https://${HOSTNAME}/${STAGE}/instruments/`
 const ARTISTS_URL = `https://${HOSTNAME}/${STAGE}/artists/`
 

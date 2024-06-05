@@ -1,5 +1,4 @@
 import {Button} from "@mui/material";
-import AddInstrumentDialog from "../instruments/AddInstrumentDialog";
 import {useState} from "react";
 import AddArtistDialog from "./AddArtistDialog";
 

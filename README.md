@@ -20,8 +20,19 @@ This application send requests to the API Gateway.
 
 You can run this app in a Docker container
 
+Create a file named `.env` in the root directory of the project with valid values for the following variables
+```
+REACT_APP_HOSTNAME=<The API hostname>
+REACT_APP_STAGE=<The API Gateway stage>
+```
+
+Build the image:
 ```
 docker build -t my-band . 
+```
+
+Run the container:
+```
 docker run -p 80:80 --name my-band-container my-band
 ```
 
